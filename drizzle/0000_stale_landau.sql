@@ -1,0 +1,23 @@
+CREATE TABLE `jobs` (
+	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	`company` text NOT NULL,
+	`role` text NOT NULL,
+	`location` text DEFAULT '' NOT NULL,
+	`work_style` text DEFAULT 'Remote' NOT NULL,
+	`job_url` text DEFAULT '' NOT NULL,
+	`stage` text DEFAULT 'Saved' NOT NULL,
+	`stage_date` text NOT NULL,
+	`applied_date` text DEFAULT '' NOT NULL,
+	`listed_salary` text DEFAULT '' NOT NULL,
+	`levels_salary` text DEFAULT '' NOT NULL,
+	`level` text DEFAULT '' NOT NULL,
+	`pros` text DEFAULT '' NOT NULL,
+	`cons` text DEFAULT '' NOT NULL,
+	`notes` text DEFAULT '' NOT NULL,
+	`contact` text DEFAULT '' NOT NULL,
+	`next_step` text DEFAULT '' NOT NULL,
+	`next_step_date` text DEFAULT '' NOT NULL,
+	`priority` text DEFAULT 'Medium' NOT NULL,
+	`created_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	`updated_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
